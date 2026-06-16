@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لمسة أبها للديكور | تصميم داخلي وتنفيذ ديكور — أبها</title>
+<meta name="description" content="لمسة أبها للديكور — مكتب تصميم داخلي وتنفيذ ديكور في أبها. جبس وأسقف، جدران تلفزيون، غرف نوم وخزائن، إضاءة LED، تنفيذ متكامل بإشراف مهندسين. تقييم 4.8 على خرائط Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#15120f; --bg2:#1d1916; --card:#221d19; --ink:#f3ece2; --soft:#a99e90;
+  --line:#332c26; --wood:#8a6748; --amber:#d9a441; --amber2:#e9bf6b;
+  --shadow:0 30px 70px -30px rgba(0,0,0,.7);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Readex Pro',sans-serif;font-weight:600;line-height:1.25}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+.ey{font-family:'Readex Pro';font-weight:600;letter-spacing:.3em;font-size:.7rem;color:var(--amber);text-transform:uppercase}
+
+#pre{position:fixed;inset:0;z-index:10000;background:#100d0b;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;transition:opacity .7s ease,visibility .7s}
+#pre.done{opacity:0;visibility:hidden;display:none;pointer-events:none}
+#pre .pl{font-family:'Readex Pro';font-weight:600;color:var(--ink);font-size:1.7rem;letter-spacing:.12em}
+#pre .pl b{color:var(--amber)}
+#pre .bar{width:120px;height:2px;background:rgba(255,255,255,.12);overflow:hidden;border-radius:2px}
+#pre .bar i{display:block;height:100%;width:38%;background:var(--amber);animation:load 1.1s infinite}
+@keyframes load{0%{transform:translateX(-160%)}100%{transform:translateX(380%)}}
+
+.nav{position:fixed;top:0;inset-inline:0;z-index:900;padding:20px 0;transition:.4s}
+.nav.scz{background:rgba(21,18,15,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:13px 0}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Readex Pro';font-size:1.34rem;font-weight:700;letter-spacing:.02em}
+.brand b{color:var(--amber)}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{font-weight:500;font-size:.95rem;color:var(--ink);opacity:.78;position:relative;transition:.25s}
+.menu a:hover{opacity:1;color:var(--amber2)}
+.menu a.nbtn{background:var(--amber);color:#1a1410;padding:11px 23px;border-radius:8px;font-weight:700;font-size:.9rem;opacity:1}
+.menu a.nbtn:hover{background:var(--amber2);color:#1a1410;transform:translateY(-2px)}
+.burger{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:26px;height:2px;background:var(--ink);transition:.3s}
+
+/* hero full-bleed */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero .bgimg{position:absolute;inset:0;z-index:0}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;opacity:.42}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(21,18,15,.6) 0%,rgba(21,18,15,.3) 40%,rgba(21,18,15,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-block:0 8vh}
+.hero .ey{display:inline-block;margin-bottom:22px}
+.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:700;letter-spacing:-.01em;margin-bottom:20px}
+.hero h1 .ac{color:var(--amber)}
+.hero .sub{font-size:1.16rem;color:var(--soft);max-width:46ch;margin-bottom:34px}
+.hcta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:15px 32px;border-radius:9px;font-weight:700;font-size:.98rem;transition:.3s;display:inline-flex;align-items:center;gap:9px}
+.btn-p{background:var(--amber);color:#1a1410;box-shadow:0 16px 34px -16px rgba(217,164,65,.6)}
+.btn-p:hover{background:var(--amber2);transform:translateY(-3px)}
+.btn-o{border:1.5px solid rgba(243,236,226,.32);color:var(--ink)}
+.btn-o:hover{border-color:var(--amber);color:var(--amber2)}
+
+.statbar{background:var(--bg2);border-block:1px solid var(--line)}
+.statbar .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:24px;padding:34px 0}
+.stat{text-align:center}
+.stat b{font-family:'Readex Pro';font-weight:700;font-size:2.2rem;color:var(--amber2);display:block}
+.stat span{font-size:.86rem;color:var(--soft)}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+section{padding:100px 0;position:relative}
+.shead{max-width:660px;margin-bottom:56px}
+.shead.ctr{margin-inline:auto;text-align:center}
+.shead h2{font-size:clamp(2rem,4.6vw,3.1rem);margin:14px 0;font-weight:700}
+.shead p{color:var(--soft);font-size:1.05rem}
+
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}
+.aimg{position:relative;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4}
+.aimg img{width:100%;height:100%;object-fit:cover}
+.aimg::before{content:"";position:absolute;inset:0;border:1px solid rgba(217,164,65,.25);border-radius:14px;z-index:2;pointer-events:none}
+.about p.lead{font-size:1.14rem;color:var(--ink);margin-bottom:16px}
+.about p.body{color:var(--soft);margin-bottom:16px}
+.sig{font-family:'Cormorant Garamond';font-style:italic;font-size:1.5rem;color:var(--amber2);margin-top:8px}
+.alist{list-style:none;margin-top:22px;display:grid;gap:12px}
+.alist li{display:flex;align-items:center;gap:12px;color:var(--ink);font-weight:500}
+.alist li::before{content:"✦";color:var(--amber);font-size:.9rem}
+
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:34px 28px;position:relative;overflow:hidden;transition:.4s}
+.scard::before{content:"";position:absolute;top:0;inset-inline:0;height:3px;background:linear-gradient(90deg,var(--amber),transparent);transform:scaleX(0);transform-origin:right;transition:.4s}
+.scard:hover{transform:translateY(-7px);border-color:rgba(217,164,65,.3)}
+.scard:hover::before{transform:scaleX(1)}
+.scard .ic{font-size:1.7rem;margin-bottom:16px;color:var(--amber2)}
+.scard h3{font-size:1.2rem;margin-bottom:9px}
+.scard p{font-size:.94rem;color:var(--soft)}
+
+.work{background:var(--bg2)}
+.pgrid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:170px;gap:14px}
+.pitem{position:relative;border-radius:12px;overflow:hidden;cursor:pointer}
+.pitem img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.pitem::after{content:attr(data-t);position:absolute;inset-block-end:0;inset-inline:0;padding:30px 16px 14px;background:linear-gradient(transparent,rgba(10,8,6,.9));font-weight:600;font-size:.9rem;opacity:0;transform:translateY(8px);transition:.4s}
+.pitem:hover img{transform:scale(1.07)}
+.pitem:hover::after{opacity:1;transform:none}
+.pitem.a{grid-column:span 4;grid-row:span 2}
+.pitem.b{grid-column:span 2;grid-row:span 2}
+.pitem.c{grid-column:span 2;grid-row:span 2}
+.pitem.d{grid-column:span 2;grid-row:span 2}
+.pitem.e{grid-column:span 2;grid-row:span 2}
+
+.psteps{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.pstep{padding:28px 22px;border-inline-start:1px solid var(--line);position:relative}
+.pstep:first-child{border:0}
+.pstep .n{font-family:'Readex Pro';font-weight:700;font-size:2.4rem;color:var(--wood);opacity:.6;margin-bottom:10px}
+.pstep h3{font-size:1.12rem;margin-bottom:8px}
+.pstep p{font-size:.92rem;color:var(--soft)}
+
+.rev{background:var(--bg2)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px 28px}
+.rcard .st{color:var(--amber);letter-spacing:2px;margin-bottom:14px}
+.rcard p{color:var(--ink);font-size:1rem;margin-bottom:18px}
+.rcard .who{display:flex;align-items:center;gap:12px}
+.rcard .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--wood),var(--amber));color:#1a1410;display:flex;align-items:center;justify-content:center;font-family:'Readex Pro';font-weight:700}
+.rcard .who b{font-size:.95rem}.rcard .who span{font-size:.78rem;color:var(--soft)}
+
+.cta{text-align:center;background:linear-gradient(180deg,var(--bg),#0f0c0a)}
+.cta h2{font-size:clamp(2rem,4.8vw,3.2rem);font-weight:700;margin-bottom:16px}
+.cta p{color:var(--soft);max-width:46ch;margin:0 auto 32px;font-size:1.06rem}
+.cta .hcta{justify-content:center}
+.cinfo{display:flex;gap:42px;justify-content:center;flex-wrap:wrap;margin-top:44px}
+.cinfo .lab{font-size:.74rem;letter-spacing:.2em;color:var(--amber);text-transform:uppercase;display:block;margin-bottom:4px}
+.cinfo .val{font-size:1.04rem;font-weight:500}
+
+footer{background:#0f0c0a;padding:46px 0 30px;text-align:center;color:var(--soft)}
+.fbrand{font-family:'Readex Pro';font-weight:700;font-size:1.45rem;color:var(--ink);margin-bottom:10px}
+.fbrand b{color:var(--amber)}
+footer .meta{font-size:.9rem;margin-bottom:22px}
+.fsig{border-top:1px solid var(--line);padding-top:20px;font-size:.85rem;color:rgba(169,158,144,.7)}
+.fsig a{font-family:'Cormorant Garamond';font-style:italic;font-size:1.18rem;color:var(--amber2)}
+
+.wa{position:fixed;inset-block-end:22px;inset-inline-start:22px;z-index:800;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6);transition:.3s}
+.wa:hover{transform:scale(1.1)}.wa svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+  .menu{position:fixed;inset-block:0 auto;inset-inline-end:0;top:0;height:100vh;width:74%;max-width:320px;background:var(--bg2);flex-direction:column;justify-content:center;gap:30px;transform:translateX(110%);transition:.45s;box-shadow:var(--shadow);z-index:950}
+  .menu.open{transform:none}
+  .burger{display:flex;z-index:960}
+  .agrid{grid-template-columns:1fr;gap:38px}
+  .sgrid,.rgrid{grid-template-columns:1fr}
+  .psteps{grid-template-columns:1fr 1fr}
+  .pgrid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+  .pitem.a,.pitem.b,.pitem.c,.pitem.d,.pitem.e{grid-column:span 1;grid-row:span 1}
+  .pitem.a{grid-column:span 2}
+}
+@media(max-width:520px){.psteps{grid-template-columns:1fr}.cinfo{gap:24px}}
+</style>
+</head>
+<body>
+<div id="pre"><div class="pl">لمسة <b>أبها</b></div><div class="bar"><i></i></div></div>
+
+<nav class="nav" id="nav"><div class="wrap">
+  <a href="#home" class="brand">لمسة أبها<b>.</b></a>
+  <div class="menu" id="menu">
+    <a href="#about">عن المكتب</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#work">أعمالنا</a>
+    <a href="#reviews">العملاء</a>
+    <a href="https://wa.me/966503049788" class="nbtn">اطلب عرض سعر</a>
+  </div>
+  <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+</div></nav>
+
+<header class="hero" id="home">
+  <div class="bgimg"><img src="feature.jpg" alt="جدار تلفزيون منفّذ"></div>
+  <div class="wrap">
+    <span class="ey rv">تصميم داخلي وتنفيذ · أبها</span>
+    <h1 class="rv d1">نُتقِن التفصيل<br>الذي <span class="ac">يصنع الفرق</span></h1>
+    <p class="sub rv d2">مكتب تصميم داخلي وتنفيذ ديكور في أبها، نحوّل مساحاتك إلى أعمال دقيقة بإشراف مهندسين والتزام بالموعد والجودة.</p>
+    <div class="hcta rv d3">
+      <a href="https://wa.me/966503049788" class="btn btn-p">ابدأ مشروعك</a>
+      <a href="#work" class="btn btn-o">تصفّح أعمالنا</a>
+    </div>
+  </div>
+</header>
+
+<div class="statbar"><div class="wrap">
+  <div class="stat rv"><b>4.8</b><span>تقييم خرائط Google</span></div>
+  <div class="stat rv d1"><b>62</b><span>تقييم موثّق</span></div>
+  <div class="stat rv d2"><b>100%</b><span>التزام بالمواعيد</span></div>
+  <div class="stat rv d3"><b>أبها</b><span>والمنطقة الجنوبية</span></div>
+</div></div>
+
+<section id="about" class="about"><div class="wrap">
+  <div class="agrid">
+    <div class="rv">
+      <span class="ey">من نحن</span>
+      <h2 class="disp" style="font-size:clamp(1.9rem,4vw,2.7rem);margin:14px 0 18px">مكتب يُترجم ذوقك<br>إلى تنفيذ دقيق</h2>
+      <p class="lead">«لمسة أبها للديكور» مكتب متخصّص في التصميم الداخلي وتنفيذ الديكور بمدينة أبها، نرافقك من أول فكرة حتى تسليم المكان جاهزاً بأدقّ تفاصيله.</p>
+      <p class="body">يصفنا عملاؤنا بالشغل المتقن دون أخطاء، وانضباط المواعيد، والأسعار المناسبة. نعمل بفريق من المهندسين والفنّيين المهرة، لأن كل مشروع عندنا أمانة قبل أن يكون عملاً.</p>
+      <ul class="alist">
+        <li>إشراف هندسي على كل مرحلة</li>
+        <li>التزام صارم بالموعد والميزانية</li>
+        <li>خامات بجودة عالية وتشطيب نظيف</li>
+      </ul>
+      <p class="sig">دقّةٌ في التفصيل، صدقٌ في التعامل.</p>
+    </div>
+    <div class="aimg rv d1"><img src="living.jpg" alt="صالة معيشة من تنفيذ لمسة أبها"></div>
+  </div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="shead ctr rv">
+    <span class="ey">خدماتنا</span>
+    <h2>حلول ديكور متكاملة</h2>
+    <p>من التصميم على الورق إلى آخر مسمار في المكان، كل شيء تحت إشراف واحد.</p>
+  </div>
+  <div class="sgrid">
+    <div class="scard rv"><div class="ic">◳</div><h3>تصميم داخلي</h3><p>تصوّر متكامل للمساحة بتوزيع متناسق للألوان والخامات والإضاءة.</p></div>
+    <div class="scard rv d1"><div class="ic">▤</div><h3>جبس وأسقف</h3><p>أعمال جبس وأسقف معلّقة بتصاميم عصرية تمنح المكان عمقاً.</p></div>
+    <div class="scard rv d2"><div class="ic">▦</div><h3>جدران تلفزيون</h3><p>تصميم وتنفيذ جدران تلفزيون بخامات خشبية ورخامية وإضاءة LED.</p></div>
+    <div class="scard rv"><div class="ic">▥</div><h3>غرف نوم وخزائن</h3><p>غرف نوم وخزائن مفصّلة تجمع الراحة والأناقة واستغلال المساحة.</p></div>
+    <div class="scard rv d1"><div class="ic">✸</div><h3>إضاءة وديكور LED</h3><p>تصميم إضاءة مخفية ومميّزة تبرز جمال التفاصيل ليلاً ونهاراً.</p></div>
+    <div class="scard rv d2"><div class="ic">✦</div><h3>تنفيذ وتسليم مفتاح</h3><p>إشراف كامل على الفنّيين حتى التسليم النهائي الجاهز للاستخدام.</p></div>
+  </div>
+</div></section>
+
+<section id="work" class="work"><div class="wrap">
+  <div class="shead rv">
+    <span class="ey">أعمالنا</span>
+    <h2>مشاريع نُنفّذها بأيدينا</h2>
+    <p>نماذج حقيقية من تصاميم وتنفيذات أنجزها المكتب في أبها.</p>
+  </div>
+  <div class="pgrid">
+    <div class="pitem a rv" data-t="جدار تلفزيون بإضاءة LED"><img src="tvwall.jpg" alt="جدار تلفزيون"></div>
+    <div class="pitem b rv d1" data-t="غرفة نوم بجبس وإضاءة"><img src="bedroom.jpg" alt="غرفة نوم"></div>
+    <div class="pitem c rv d2" data-t="صالة معيشة عصرية"><img src="living.jpg" alt="صالة"></div>
+    <div class="pitem d rv d1" data-t="جدار تلفزيون خشبي"><img src="feature.jpg" alt="جدار خشبي"></div>
+    <div class="pitem e rv d2" data-t="معرض لمسة أبها"><img src="storefront.jpg" alt="المعرض"></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="shead ctr rv">
+    <span class="ey">آلية العمل</span>
+    <h2>من الفكرة إلى التسليم</h2>
+    <p>أربع مراحل واضحة تضمن لك نتيجة دقيقة بلا مفاجآت.</p>
+  </div>
+  <div class="psteps">
+    <div class="pstep rv"><div class="n">01</div><h3>زيارة ومعاينة</h3><p>نزور الموقع ونفهم احتياجك ومساحتك وميزانيتك.</p></div>
+    <div class="pstep rv d1"><div class="n">02</div><h3>تصميم وعرض سعر</h3><p>نقدّم تصوّراً وعرض سعر واضحاً قبل أي بدء.</p></div>
+    <div class="pstep rv d2"><div class="n">03</div><h3>تنفيذ بإشراف</h3><p>فريقنا ينفّذ كل تفصيلة بدقّة وبإشراف هندسي.</p></div>
+    <div class="pstep rv d3"><div class="n">04</div><h3>تسليم في الموعد</h3><p>نسلّمك المكان جاهزاً وفي الوقت المتّفق عليه.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews" class="rev"><div class="wrap">
+  <div class="shead ctr rv">
+    <span class="ey">آراء عملائنا</span>
+    <h2>سُمعةٌ بنيناها بالإتقان</h2>
+    <p>تقييم 4.8 من 5 على خرائط Google من 62 عميلاً.</p>
+  </div>
+  <div class="rgrid">
+    <div class="rcard rv"><div class="st">★★★★★</div><p>ما شاء الله تبارك الله، الشغل ولا غلطة، وأخلاق المهندسين تُدرَّس، والسعر طيّب.</p><div class="who"><div class="av">د</div><div><b>دحم</b><span>عميل · خرائط Google</span></div></div></div>
+    <div class="rcard rv d1"><div class="st">★★★★★</div><p>أداء مميّز، سرعة في الإنجاز، انضباط في المواعيد، وأسعار مناسبة جداً. تعاملت معهم أكثر من مرة وكانوا عند حسن الظن.</p><div class="who"><div class="av">م</div><div><b>م. ع</b><span>Local Guide · خرائط Google</span></div></div></div>
+    <div class="rcard rv d2"><div class="st">★★★★★</div><p>الشغل كان رائعاً ومتقناً، والتزام بالوقت، وعمل دقيق. جزاكم الله كل خير.</p><div class="who"><div class="av">أ</div><div><b>اوشن دريم</b><span>Local Guide · خرائط Google</span></div></div></div>
+  </div>
+</div></section>
+
+<section id="contact" class="cta"><div class="wrap"><div class="rv">
+  <span class="ey">لنبدأ</span>
+  <h2>مكانك يستحقّ لمسة احترافية</h2>
+  <p>تواصل معنا اليوم لزيارة ومعاينة مجانية وعرض سعر واضح، ودعنا ننفّذ فكرتك بإتقان.</p>
+  <div class="hcta">
+    <a href="https://wa.me/966503049788" class="btn btn-p">واتساب مباشر</a>
+    <a href="tel:+966503049788" class="btn btn-o">اتصل: 050 304 9788</a>
+  </div>
+  <div class="cinfo">
+    <div><span class="lab">الموقع</span><span class="val">أبها · الخشع · طريق الملك فهد</span></div>
+    <div><span class="lab">الهاتف</span><span class="val">050 304 9788</span></div>
+    <div><span class="lab">أوقات العمل</span><span class="val">يومياً من 8 صباحاً</span></div>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap">
+  <div class="fbrand">لمسة أبها<b>.</b> للديكور</div>
+  <div class="meta">مكتب تصميم داخلي وتنفيذ ديكور · أبها، المملكة العربية السعودية</div>
+  <div class="fsig">صُمّم بعناية · <a href="https://wa.me/966505989304" target="_blank" rel="noopener">designed by ali</a></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/966503049788" aria-label="واتساب"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.917zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+
+<script>
+(function(){
+  function hidePre(){var p=document.getElementById('pre');if(p)p.classList.add('done');}
+  window.addEventListener('load',function(){setTimeout(hidePre,650);});
+  setTimeout(hidePre,3500);
+  var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){if(window.scrollY>40)nav.classList.add('scz');else nav.classList.remove('scz');});
+  var burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  if(!burger){burger=document.createElement('button');burger.className='burger';burger.id='burger';burger.innerHTML='<span></span><span></span><span></span>';var nw=document.querySelector('.nav .wrap');if(nw)nw.appendChild(burger);}
+  if(burger&&menu){
+    burger.addEventListener('click',function(){menu.classList.toggle('open');});
+    menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');});});
+  }
+  var rvs=[].slice.call(document.querySelectorAll('.rv'));
+  function reveal(el){el.classList.add('in');}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){reveal(e.target);io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){io.observe(el);});
+  }else{rvs.forEach(reveal);}
+  function safety(){var h=window.innerHeight;rvs.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<h*0.95)reveal(el);});}
+  window.addEventListener('scroll',safety);safety();
+  setTimeout(function(){rvs.forEach(function(el){el.style.transition='none';el.classList.add('in');el.style.opacity='1';el.style.transform='none';});},2800);
+})();
+</script>
+</body>
+</html>
